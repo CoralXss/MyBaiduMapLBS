@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/wel_imge2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="阿狸和小小云"
+        android:textSize="22sp"
+        android:textColor="#4f4f4f"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"/>
+    
+    <Button 
+        android:id="@+id/btn_enterMain"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="立即体验"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

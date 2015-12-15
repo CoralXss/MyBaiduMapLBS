@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+<!-- 
+<LinearLayout 
+    android:id="@+id/ll_query_and_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">  </LinearLayout>   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_left_arrow" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edt_search_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/linearlayout_bg2"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:paddingLeft="3dp"
+            android:textColor="#000"
+            android:textSize="14sp" />
+        
+        <TextView 
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+            	android:layout_marginRight="15dp"
+                android:text="hh"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bcbcbc" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+
+<!-- 
+<LinearLayout 
+    android:id="@+id/ll_poi_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone">   </LinearLayout>   -->
+    
+    <ListView 
+        android:id="@+id/lv_poi_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="15dp"
+        android:divider="#eee"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

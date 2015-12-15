@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <!--标题和图片一起展示的viewpager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pagerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:textColor="#ffff"/>
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/img_page0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/page_now"
+                android:scaleType="matrix"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/img_page1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/page"
+                android:scaleType="matrix"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:id="@+id/img_page2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/page"
+                android:scaleType="matrix"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

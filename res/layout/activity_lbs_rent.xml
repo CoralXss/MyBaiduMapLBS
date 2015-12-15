@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+    
+    <include
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        layout="@layout/public_top_head"/>
+    
+	<com.baidumap.views.ExpandTabView 
+	    android:id="@+id/expandTabView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/top"/>
+<!-- 
+	<ListView 
+	    android:id="@+id/lv_rent_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/linearlayout_rect_bg"
+	    android:layout_below="@+id/expandTabView"
+	    android:divider="#eee"
+	    android:dividerHeight="1dp"
+	    android:scrollbars="none" 
+	    android:padding="5dp"/>   -->	
+<!-- 	
+	<com.baidumap.views.xlistview.XListView
+        android:id="@+id/lv_rent_xllist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#eee"
+	    android:dividerHeight="1dp"
+	    android:scrollbars="none"
+	    android:background="@drawable/linearlayout_rect_bg"
+	    android:layout_below="@+id/expandTabView"/>    -->
+	
+	<LinearLayout 
+	    android:id="@+id/ll_main_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/expandTabView"
+	    android:orientation="vertical"></LinearLayout>	
+	
+	<LinearLayout 
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/btn_list"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="列表"/>
+	    <Button 
+	        android:id="@+id/btn_map"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="地图模式"/>
+	</LinearLayout>   
+<!-- 
+	<ProgressBar 
+	    android:id="@+id/progressBar"
+	    android:layout_width="35dp"
+	    android:layout_height="35dp"
+	    android:indeterminate="false"
+	    android:indeterminateDrawable="@anim/custom_dialog_loading"
+	    android:layout_centerInParent="true"
+	    android:visibility="visible"/>    -->	
+</RelativeLayout>

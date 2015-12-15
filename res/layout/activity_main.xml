@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#eee" >
+
+	<com.baidu.mapapi.map.MapView
+		android:id="@+id/bmapView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:clickable="true" />
+
+	<LinearLayout
+		android:id="@+id/ll_top"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		android:layout_margin="8dp"
+		android:padding="10dp"
+		android:layout_alignParentTop="true"
+		android:background="@drawable/linearlayout_bg">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:src="@drawable/ic_launcher"
+			android:layout_gravity="center"/>
+
+		<EditText
+			android:id="@+id/edt_search"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent"
+			android:hint="搜地点、查公交、找路线"
+			android:textColor="#BCBCBC"
+			android:textSize="14sp"
+			android:background="#fff"/>
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:background="#BCBCBC"
+			/>
+
+		<ImageView
+			android:id="@+id/img_yuyin"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:src="@drawable/ic_launcher"
+			android:layout_gravity="center"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/ll_top"
+		android:padding="8dp">
+		<TextView
+		    android:id="@+id/tv_road_condition"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="路况"
+			android:drawableTop="@drawable/ic_launcher"
+			android:gravity="center"
+			android:background="@drawable/linearlayout_bg"
+			android:padding="5dp"
+			android:layout_marginBottom="5dp"/>
+		<ImageView
+		    android:id="@+id/img_layer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_launcher"
+			android:gravity="center"
+			android:background="@drawable/linearlayout_bg"
+			android:padding="5dp"
+			android:layout_marginBottom="5dp"/>
+		<TextView
+		    android:id="@+id/tv_all_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="全景"
+			android:drawableTop="@drawable/ic_launcher"
+			android:gravity="center"
+			android:background="@drawable/linearlayout_bg"
+			android:padding="5dp" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="45dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_margin="10dp"
+		android:padding="5dp"
+		android:layout_alignParentRight="true"
+		android:layout_above="@+id/ll_bottom"
+		android:background="@drawable/linearlayout_bg"
+		android:gravity="center">
+
+		<Button
+			android:id="@+id/btn_biggger"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="+"
+			android:textSize="18sp"
+			android:background="#fff"
+			android:gravity="center" />
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#BCBCBC"
+			/>
+		<Button
+			android:id="@+id/btn_smaller"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="-"
+			android:textSize="18sp"
+			android:background="#fff"
+			android:gravity="center"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:orientation="horizontal"
+		android:layout_margin="10dp"
+		android:padding="5dp"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/linearlayout_bg"
+		android:gravity="center">
+
+		<TextView
+			android:id="@+id/tv_neighbor"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="附近"
+			android:textSize="14sp"
+			android:drawableLeft="@drawable/ic_launcher"
+			android:gravity="center" />
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="wrap_content"
+			android:background="#BCBCBC"
+			android:layout_margin="5dp"/>
+
+		<TextView
+			android:id="@+id/tv_route"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="路线"
+			android:textSize="14sp"
+			android:drawableLeft="@drawable/ic_launcher"
+			android:gravity="center"
+			/>
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="wrap_content"
+			android:background="#BCBCBC"
+			android:layout_margin="5dp"/>
+
+		<TextView
+			android:id="@+id/tv_navigation"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="导航"
+			android:textSize="14sp"
+			android:drawableLeft="@drawable/ic_launcher"
+			android:gravity="center"
+			/>
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="wrap_content"
+			android:background="#BCBCBC"
+			android:layout_margin="5dp"/>
+
+		<TextView
+			android:id="@+id/tv_mine"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="我的"
+			android:textSize="14sp"
+			android:drawableLeft="@drawable/ic_launcher"
+			android:gravity="center"
+			/>
+	</LinearLayout>
+</RelativeLayout>
